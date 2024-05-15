@@ -82,3 +82,23 @@ p {
   color: #FDFBDA;
   padding-left: 5%;
 }
+
+.contact{
+  background-color: #2D4659;
+  color: #FDFBDA;
+  width: 100px;
+  padding: 5px;
+  padding-left: 15px;
+  border-radius: 40px;
+  margin-left: 36%;
+}
+
+.btn {
+  background-color: #FDFBDA; 
+  border-color: #2D4659; 
+  color: #2D4659; 
+  font-size: 16px; 
+  cursor: pointer; 
+  border-radius: 100px;
+  margin-left: 40%;
+}
