@@ -40,10 +40,10 @@ h4 {
 }
   
 .links {
-    padding-left: 5%;
     text-align: right;
     color: #2D4659;
-    font-size: 25px;
+    font-size: 30px;
+    margin-left: 9%
 }
 
 h3 {
@@ -90,19 +90,9 @@ p {
   width: 110px;
   padding: 10px;
   border-radius: 40px;
-  margin-left: 36%;
+  margin-left: 80%;
+  margin-top: 2%;
   font-size: 30px;
-  
-}
-
-.btn {
-  background-color: #FDFBDA; 
-  border-color: #2D4659; 
-  color: #2D4659; 
-  font-size: 16px; 
-  cursor: pointer; 
-  border-radius: 100px;
-  margin-left: 2%;
   
 }
 
