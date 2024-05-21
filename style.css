@@ -14,7 +14,7 @@ body {
     font-style: normal;
   }
   
-  h1 {
+  .name {
     padding-left: 15%;
     padding-top: 5%;
   }
@@ -53,6 +53,10 @@ h3 {
     padding-top: 5%;
 }
 
+.right{
+  text-align: right;
+}
+
 #right {
     padding-left: 45%;
 }
@@ -71,7 +75,7 @@ h3 {
     font-style: normal;
   }
 
-h2 {
+.sophmore {
     padding-left: 5%;
     padding-right: 35%;
     font-size: 20px;
@@ -99,4 +103,19 @@ p {
 .col {
   display: flex;
   align-items: center;
+}
+
+.Projects{
+  text-align: center;
+  padding-top: 10%;
+}
+
+.green{
+  color: #819F7F;
+  text-align: center;
+}
+
+.assignments{
+  color: #FDFBDA;
+  padding-bottom: 10%;
 }
