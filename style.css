@@ -57,6 +57,10 @@ h3 {
   text-align: right;
 }
 
+.right2{
+  align-items: center;
+}
+
 #right {
     padding-left: 45%;
 }
@@ -119,3 +123,33 @@ p {
   color: #FDFBDA;
   padding-bottom: 10%;
 }
+
+.skills{
+  margin-top: 20px;
+  text-align: center;
+  color: #FDFBDA;
+  font-size: 40px;
+}
+
+.big{
+  font-size: 70px;
+}
+
+img{
+  width: 400px;
+  margin: 10px;
+}
+
+#pic{
+  width: 200px;
+  align-items: right;
+  border-radius: 50%;
+  margin-left: 70%;
+}
+
+.linkbutton{
+  margin-right: 20px;
+}
+
+<img id = "pic" src = "Screenshot 2024-05-23 134708.png">
+<h5 class = "contact indie-flower-regular linkbutton">Contact</h5>
