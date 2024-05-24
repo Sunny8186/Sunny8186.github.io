@@ -88,6 +88,7 @@ h3 {
     padding-right: 35%;
     font-size: 20px;
     color: #2D4659;
+    padding-bottom: 5%;
 }
 
 p {
@@ -111,19 +112,21 @@ p {
   align-items: center;
 }
 
-.Projects{
+#Projects{
   text-align: center;
-  padding-top: 10%;
+  padding-top: 8%;
+  font-size: 70px;
 }
 
 .green{
   color: #819F7F;
   text-align: center;
+  padding-bottom: 5%;
 }
 
 .assignments{
   color: #FDFBDA;
-  padding-bottom: 10%;
+  margin-top: 8%;
 }
 
 .skills{
@@ -139,7 +142,7 @@ p {
 
 img{
   width: 400px;
-  margin: 10px;
+  margin: 20px;
 }
 
 #pic{
@@ -166,4 +169,41 @@ a{
 
 a:hover{
   color: #D3D0A8;
+}
+
+.Github{
+  background-color: #2D4659;
+  color: #FDFBDA;
+  width: 20%;
+  padding: 10px;
+  border-radius: 40px;
+  font-size: 30px;
+  bottom: 10%;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.blink{
+  background-color: #2D4659;
+  color: #FDFBDA;
+  width: 20%;
+  
+  padding: 10px;
+  border-radius: 40px;
+  font-size: 20px;
+  bottom: 10%;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.bottom{
+  background-color: #D3D0A8;
+    width: 105%;
+    color: #FDFBDA;
+}
+
+.center{
+  text-align: center;
+  padding-top: 2%;
+  font-size: 60px;
 }
