@@ -207,3 +207,19 @@ a:hover{
   padding-top: 2%;
   font-size: 60px;
 }
+
+#shiftR {
+  margin-left: 5%
+}
+
+#shiftL {
+  margin-right: 5%;
+}
+
+#r {
+  margin-left: 2%;
+}
+
+#l {
+  margin-right: 2%;
+}
