@@ -37,7 +37,7 @@
 
       <div class = "intro">
         <h1 class = "indie-flower-regular big" id ="Projects">Projects</h1>
-        <h2 class = "abel-regular green">Still in progress as of May 2024</h2>
+        <h2 class = "abel-regular green">Still in progress as of May 2025</h2>
       </div>
 
       <div>
@@ -66,6 +66,52 @@
           <a href="https://github.com/JasminWise/Tell-a-Story" target="_blank">GitHub Repository</a>
         </h5>
       </div>
+
+      <hr>
+
+      <button class="indie-flower-regular big toggle-button" onclick="toggleContent()">View Graphic Design</button>
+
+      <div id="extra-content" class="hidden-content">
+        <h2 class="assignments indie-flower-bold bt">Circle Logos</h2>
+
+        <div class="row">
+            <img src="images/Artboard 2_1.png" alt="Design 1">
+            <img src="images/Artboard 2_2.png" alt="Design 2">
+            <img src="images/Artboard 2_3.png" alt="Design 3">
+            <img src="images/Artboard 2_4.png" alt="Design 4">
+            <img src="images/Artboard 2.png" alt="Design 5">
+        </div>
+        <h2 class="assignments indie-flower-bold bt">Company Logos</h2>
+        
+        <div class="row">
+          <img src="images/Screenshot 2024-12-03 at 1.20.40 PM.png" alt="Design 1"> 
+          <img src="images/Screenshot 2024-12-03 at 1.22.38 PM.png" alt="Design 2">
+      </div>
+      <h2 class="assignments indie-flower-bold bt">Graphic Art</h2>
+
+      <div class="row">
+        <img src="images/Screenshot 2024-12-03 at 1.19.27 PM.png" alt="Design 1">
+        <img src="images/Screenshot 2024-12-03 at 1.20.04 PM.png" alt="Design 2">
+        <img src="images/Screenshot 2024-12-03 at 1.23.43 PM.png" alt="Design 3">
+    </div>
+
+    </div>
+
+    <script>
+
+        function toggleContent() {
+            var content = document.getElementById("extra-content");
+            var button = document.querySelector(".toggle-button");
+
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";  
+                button.textContent = "Hide"; 
+            } else {
+                content.style.display = "none";  
+                button.textContent = "View Graphic Design"; 
+            }
+        }
+    </script>
 
       <hr>
 

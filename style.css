@@ -223,3 +223,59 @@ a:hover{
 #l {
   margin-right: 2%;
 }
+
+.big {
+  font-size: 25px;
+}
+
+.ll {
+  font-size: 40px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #FDFBDA;
+}
+
+/* Style for the button */
+.toggle-button {
+  background-color: #819F7F;
+  color: #2D4659;
+  padding: 30px 20px;
+  font-size: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+  margin-left: 35%;
+}
+
+.toggle-button:hover {
+  background-color: #819F7F;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center vertically on the page */
+}
+
+#extra-content .row {
+  display: flex;                            
+  justify-content: center;    
+  flex-wrap: wrap;    
+  background-color: #FDFBDA;      
+}
+
+#extra-content .row img {
+  width: 200%;                
+  max-width: 400px;          
+  height: auto;                       
+}
+
+.bt{
+  font-size: 40px;
+  text-align: center;
+}
