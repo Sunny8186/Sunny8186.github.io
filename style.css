@@ -62,7 +62,13 @@ h3 {
 }
 
 .right2{
-  align-items: center;
+  float: none; /* Remove float */
+  display: block; /* Ensure the image is treated as a block element */
+  margin-left: auto; /* Push the image to the right */
+  margin-right: 5%; /* Add 5% margin on the right */
+  margin-bottom: 10px; /* Reduce spacing between stacked images */
+  max-width: 100% !important; /* Force the image to take up the full container width */
+  height: auto; /* Maintain aspect ratio */
 }
 
 #right {
@@ -124,9 +130,11 @@ p {
   padding-bottom: 5%;
 }
 
-.assignments{
+.assignments {
   color: #FDFBDA;
-  margin-top: 8%;
+  margin-top: 0.5%; /* Reduce top margin to bring sections closer */
+  margin-bottom: 0; /* Remove extra bottom margin */
+  font-size: 52.5px; /* Keep the font size */
 }
 
 .skills{
@@ -159,8 +167,13 @@ img{
   margin-left: 50%;
 }
 
-.descrption{
+.descrption {
   color: #D3D0A8;
+  max-width: 55%; /* Restrict the width of the text */
+  margin-right: auto; /* Add space between the text and the image */
+  line-height: 1.4; /* Slightly reduce line height for tighter spacing */
+  margin-bottom: 5px; /* Reduce space below the description */
+  font-size: 21px; /* Keep the font size */
 }
 
 a{
@@ -283,4 +296,76 @@ a:hover{
 .adobe-illustrator{
   width: 200px;
   margin-left: 10%;
+}
+
+.project-container {
+  margin-top: 10px; /* Reduce top margin between sections */
+  margin-bottom: 10px; /* Reduce bottom margin between sections */
+}
+
+.project-container h1 {
+  font-size: 52.5px; /* Increased by 5% from 50px */
+  margin-bottom: 10px;
+}
+
+.project-container h5 {
+  font-size: 21px; /* Increased by 5% from 20px */
+  margin-bottom: 20px;
+}
+
+.project-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-section {
+  margin: 0; /* Remove all margins around the section */
+  padding: 10px 0; /* Add minimal padding for spacing */
+}
+
+.project-section h1 {
+  margin-top: 5px; /* Reduce space above the heading */
+  margin-bottom: 5px; /* Reduce space below the heading */
+  font-size: 52.5px; /* Keep the font size */
+}
+
+.project-section h5 {
+  margin-top: 5px; /* Reduce space above the description */
+  margin-bottom: 10px; /* Reduce space below the description */
+  font-size: 21px; /* Keep the font size */
+  line-height: 1.4; /* Slightly reduce line height */
+}
+
+.project-section img {
+  margin-top: 5px; /* Reduce space above the image */
+  margin-bottom: 10px; /* Reduce space below the image */
+  max-width: 60%; /* Adjust image size */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure proper alignment */
+  margin-left: auto; /* Center the image horizontally */
+  margin-right: 5%; /* Add spacing on the right */
+}
+
+.expandable-image {
+    transition: transform 0.3s ease-in-out; /* Smooth animation for scaling */
+    transform: scale(1); /* Default size */
+}
+
+.expandable-image.expanded {
+    transform: scale(3); /* Scale the image to 3 times its size */
+}
+
+.expand-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2D4659;
+    color: #FDFBDA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.expand-button:hover {
+    background-color: #819F7F;
 }
