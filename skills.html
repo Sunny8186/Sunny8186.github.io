@@ -34,6 +34,26 @@
             max-height: 300px; /* Set the maximum height */
             margin: 0 auto; /* Center the images */
         }
+
+        .award-section {
+            display: flex; /* Use Flexbox for layout */
+            align-items: center; /* Align items vertically in the center */
+            gap: 20px; /* Add spacing between the text and the image */
+            margin-top: 20px; /* Add spacing above the section */
+        }
+
+        .award-section h4 {
+            flex: 1; /* Allow the text to take up the remaining space */
+            margin: 0 0 0 5%; /* Add a left margin of 5% */
+        }
+
+        .award-image {
+            max-width: 300px; /* Increase the size of the image */
+            height: auto; /* Maintain aspect ratio */
+            flex-shrink: 0; /* Prevent the image from shrinking */
+            margin-right: 5%; /* Add a right margin of 5% */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Add a drop shadow */
+        }
     </style>
 </head>
 <body>
@@ -45,7 +65,7 @@
       </div>
       <div class = "intro">
         <h1 class = "indie-flower-regular big" id ="Projects">Skills</h1>
-        <h2 class = "abel-regular green">References: 419-824-8570 ext 5224</h2>
+        <h2 class = "abel-regular green">References: 419-824-8570</h2>
       </div>
 
       <div>
@@ -103,5 +123,13 @@
       <img class="adobe-illustrator" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1051px-Adobe_Photoshop_CC_icon.svg.png">
       <img class="adobe-illustrator" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Adobe_Premiere_Pro_CC_icon.svg/1200px-Adobe_Premiere_Pro_CC_icon.svg.png">
 
+      <hr>
+
+      <div class="award-section">
+          <h4 class="indie-flower-regular">
+              This is an award I won for creating a Youth Prevention Video about why Volunteering is beneficial. I won third place and got $100
+          </h4>
+          <img class="award-image" src="Screenshot 2025-05-13 133135.png" alt="Award Image">
+      </div>
 </body>
 </html>

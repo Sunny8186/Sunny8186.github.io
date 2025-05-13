@@ -369,3 +369,20 @@ a:hover{
 .expand-button:hover {
     background-color: #819F7F;
 }
+
+.award-image {
+    max-width: 300px; /* Keep the image size */
+    height: auto; /* Maintain aspect ratio */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    margin-right: 5%; /* Add a right margin of 5% */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.8); /* Darker drop shadow */
+}
+
+.info-box {
+    background-color: #8d9e86; /* Light green background */
+    padding: 3px; /* Reduce padding inside the box */
+    margin-top: 5%;
+    margin-bottom: 10px; /* Reduce spacing between sections */
+    border-radius: 5px; /* Smaller rounded corners */
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2); /* Smaller and subtler shadow */
+}

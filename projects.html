@@ -37,12 +37,13 @@
         }
 
         .image-container {
-            text-align: center; /* Center the content inside the container */
+           flex-shrink: 0; /* Prevent the image from shrinking */
+            text-align: center; /* Center the button under the image */
             margin-top: 10px; /* Add spacing above the container */
         }
 
         .expand-button {
-            margin-top: 10px; /* Add spacing above the button */
+            margin-top: 20px; /* Increase the spacing above the button */
             padding: 10px 20px;
             font-size: 16px;
             background-color: #2D4659;
@@ -50,10 +51,29 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            position: relative; /* Keep the button positioned relative to its container */
+            left: 20px; /* Offset the button slightly to the right */
         }
 
         .expand-button:hover {
             background-color: #819F7F;
+        }
+
+        .project-content {
+            display: flex; /* Use Flexbox for layout */
+            align-items: flex-start; /* Align items at the top */
+            gap: 20px; /* Add spacing between the image and text */
+            margin-bottom: 30px; /* Add spacing between projects */
+        }
+
+        .expandable-image {
+            display: block; /* Ensure the image is displayed as a block element */
+            max-width: none; /* Keep the original size of the image */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .text-container {
+            flex: 1; /* Allow the text to take up the remaining space */
         }
     </style>
 </head>
@@ -72,114 +92,146 @@
 
       <div>
         <div class="project-section">
-            <h1 class="assignments indie-flower-bold">
-                <a href="https://gamedaygrillrestaurant.netlify.app/" target="_blank" id="shiftR">BPA Game Day Grill</a>
-            </h1>
-            <h5 class="descrption abel-regular" id="r">
-                This website is similar to how a mobile app would work. Me and two other classmates created a website for a fake restaurant that included almost everything an actual mobile app would have. This was later competed in the BPA conference and qualified to states.
-                <a href="https://github.com/lizzieneeley/BPA-2023" target="_blank">GitHub Repository</a>
-            </h5>
-            <div class="image-container">
-                <img class="right2 expandable-image" src="Screenshot 2025-05-08 134001.png" alt="Project Image">
-                <button class="expand-button">Expand Image</button>
+            <div class="project-content">
+                <div class="image-container">
+                    <img class="expandable-image" src="Screenshot 2025-05-08 134001.png" alt="Project Image">
+                    <button class="expand-button">Expand Image</button>
+                </div>
+                <div class="text-container">
+                    <h1 class="assignments indie-flower-bold">
+                        <a href="https://gamedaygrillrestaurant.netlify.app/" target="_blank">BPA Game Day Grill</a>
+                    </h1>
+                    <h5 class="description abel-regular">
+                        This website is similar to how a mobile app would work. Me and two other classmates created a website for a fake restaurant that included almost everything an actual mobile app would have. This was later competed in the BPA conference and qualified to states.
+                        <a href="https://github.com/lizzieneeley/BPA-2023" target="_blank">GitHub Repository</a>
+                    </h5>
+                </div>
             </div>
         </div>
 
         <div class="project-section">
-            <h1 class="assignments indie-flower-bold">
-                <a href="https://relaxed-narwhal-d2a670.netlify.app/" target="_blank" id="shiftR">HTML Crochet Page</a>
-            </h1>
-            <h5 class="descrption abel-regular" id="r">
-                This was my first HTML page, it's not the best looking but its main purpose is to provide you with ideas and tutorials on how to crochet. The hardest thing about this project was just learning how HTML worked.
-                <a href="https://github.com/Sunny8186/HtmlProject1" target="_blank">GitHub Repository</a>
-            </h5>
-            <div class="image-container">
-                <img class="right2 expandable-image" src="Screenshot 2025-05-08 134211.png" alt="Project Image">
-                <button class="expand-button">Expand Image</button>
+            <div class="project-content">
+                <div class="image-container">
+                    <img class="expandable-image" src="Screenshot 2025-05-08 134211.png" alt="Project Image">
+                    <button class="expand-button">Expand Image</button>
+                </div>
+                <div class="text-container">
+                    <h1 class="assignments indie-flower-bold">
+                        <a href="https://relaxed-narwhal-d2a670.netlify.app/" target="_blank">HTML Crochet Page</a>
+                    </h1>
+                    <h5 class="description abel-regular">
+                        This was my first HTML page, it's not the best looking but its main purpose is to provide you with ideas and tutorials on how to crochet. The hardest thing about this project was just learning how HTML worked.
+                        <a href="https://github.com/Sunny8186/HtmlProject1" target="_blank">GitHub Repository</a>
+                    </h5>
+                </div>
             </div>
         </div>
 
         <div class="project-section">
-            <h1 class="assignments indie-flower-bold">
-                <a href="https://nav-research.netlify.app" target="_blank" id="shiftR">Navigation Research</a>
-            </h1>
-            <h5 class="descrption abel-regular" id="r">
-                This is one of my more recent projects. This website talks about navigation examples often used when creating a website. It also discusses how you can make navigating a website easier for the user.
-                <a href="https://github.com/Sunny8186/Nav-research" target="_blank">GitHub Repository</a>
-            </h5>
-            <div class="image-container">
-                <img class="right2 expandable-image" src="Screenshot 2025-05-08 134350.png" alt="Project Image">
-                <button class="expand-button">Expand Image</button>
+            <div class="project-content">
+                <div class="image-container">
+                    <img class="expandable-image" src="Screenshot 2025-05-08 134350.png" alt="Project Image">
+                    <button class="expand-button">Expand Image</button>
+                </div>
+                <div class="text-container">
+                    <h1 class="assignments indie-flower-bold">
+                        <a href="https://nav-research.netlify.app" target="_blank">Navigation Research</a>
+                    </h1>
+                    <h5 class="description abel-regular">
+                        This is one of my more recent projects. This website talks about navigation examples often used when creating a website. It also discusses how you can make navigating a website easier for the user.
+                        <a href="https://github.com/Sunny8186/Nav-research" target="_blank">GitHub Repository</a>
+                    </h5>
+                </div>
             </div>
         </div>
 
         <div class="project-section">
-            <h1 class="assignments indie-flower-bold">
-                <a href="https://replicate-webpage.netlify.app" target="_blank" id="shiftR">Replicate a Webpage</a>
-            </h1>
-            <h5 class="descrption abel-regular" id="r">
-                This website is another one of the older webpages I made a while ago. This webpage is a replica of another programmer's website that was used as an example. One of the things I learned during this project is how useful the internet can be because it allowed me to look into new ways to better my program.
-                <a href="https://github.com/Sunny8186/replicate-a-web-page" target="_blank">GitHub Repository</a>
-            </h5>
-            <div class="image-container">
-                <img class="right2 expandable-image" src="Screenshot 2025-05-08 134438.png" alt="Project Image">
-                <button class="expand-button">Expand Image</button>
+            <div class="project-content">
+                <div class="image-container">
+                    <img class="expandable-image" src="Screenshot 2025-05-08 134438.png" alt="Project Image">
+                    <button class="expand-button">Expand Image</button>
+                </div>
+                <div class="text-container">
+                    <h1 class="assignments indie-flower-bold">
+                        <a href="https://replicate-webpage.netlify.app" target="_blank">Replicate a Webpage</a>
+                    </h1>
+                    <h5 class="description abel-regular">
+                        This website is another one of the older webpages I made a while ago. This webpage is a replica of another programmer's website that was used as an example. One of the things I learned during this project is how useful the internet can be because it allowed me to look into new ways to better my program.
+                        <a href="https://github.com/Sunny8186/replicate-a-web-page" target="_blank">GitHub Repository</a>
+                    </h5>
+                </div>
             </div>
         </div>
 
         <div class="project-section">
-            <h1 class="assignments indie-flower-bold">
-                <a href="https://curious-nasturtium-375064.netlify.app/" target="_blank" id="shiftR">Time Travel</a>
-            </h1>
-            <h5 class="descrption abel-regular" id="r">
-                This website I worked on with another classmate. You had to make a webpage that made it possible to time travel. You had to set it up similar to as if the webpage was advertising a product. This project really focused on design and user accessibility.
-                <a href="https://github.com/NateRoshong/Time-travel" target="_blank">GitHub Repository</a>
-            </h5>
-            <div class="image-container">
-                <img class="right2 expandable-image" src="Screenshot 2025-05-08 134527.png" alt="Project Image">
-                <button class="expand-button">Expand Image</button>
+            <div class="project-content">
+                <div class="image-container">
+                    <img class="expandable-image" src="Screenshot 2025-05-08 134527.png" alt="Project Image">
+                    <button class="expand-button">Expand Image</button>
+                </div>
+                <div class="text-container">
+                    <h1 class="assignments indie-flower-bold">
+                        <a href="https://curious-nasturtium-375064.netlify.app/" target="_blank">Time Travel</a>
+                    </h1>
+                    <h5 class="description abel-regular">
+                        This website I worked on with another classmate. You had to make a webpage that made it possible to time travel. You had to set it up similar to as if the webpage was advertising a product. This project really focused on design and user accessibility.
+                        <a href="https://github.com/NateRoshong/Time-travel" target="_blank">GitHub Repository</a>
+                    </h5>
+                </div>
             </div>
         </div>
 
         <div class="project-section">
-            <h1 class="assignments indie-flower-bold">
-                <a href="https://astounding-moonbeam-c9033b.netlify.app/" target="_blank" id="shiftR">Tell a Story</a>
-            </h1>
-            <h5 class="descrption abel-regular" id="r">
-                I worked on this project with numerous other classmates. We had to make a webpage that told a story which you could then change to affect the outcome of the story, similar to a choose-your-own-story book. The hardest part of the project was communication in the group since there were three of us.
-                <a href="https://github.com/JasminWise/Tell-a-Story" target="_blank">GitHub Repository</a>
-            </h5>
-            <div class="image-container">
-                <img class="right2 expandable-image" src="Screenshot 2025-05-08 134632.png" alt="Project Image">
-                <button class="expand-button">Expand Image</button>
+            <div class="project-content">
+                <div class="image-container">
+                    <img class="expandable-image" src="Screenshot 2025-05-08 134632.png" alt="Project Image">
+                    <button class="expand-button">Expand Image</button>
+                </div>
+                <div class="text-container">
+                    <h1 class="assignments indie-flower-bold">
+                        <a href="https://astounding-moonbeam-c9033b.netlify.app/" target="_blank">Tell a Story</a>
+                    </h1>
+                    <h5 class="description abel-regular">
+                        I worked on this project with numerous other classmates. We had to make a webpage that told a story which you could then change to affect the outcome of the story, similar to a choose-your-own-story book. The hardest part of the project was communication in the group since there were three of us.
+                        <a href="https://github.com/JasminWise/Tell-a-Story" target="_blank">GitHub Repository</a>
+                    </h5>
+                </div>
             </div>
         </div>
 
         <div class="project-section">
-            <h1 class="assignments indie-flower-bold">
-                <a href="https://stagefright2025.netlify.app/" target="_blank" id="shiftR">BPA Stage Fright</a>
-            </h1>
-            <h5 class="descrption abel-regular" id="r">
-                This website I worked on with two other classmates and took it to BPA where it placed 4th. It is a website for a fake rock band called Stage Fright. This included a section to purchase tickets, a page to buy merch, a page to view albums and other songs, and a meet-the-band page.
-                <a href="https://github.com/Sunny8186/BPARockBand" target="_blank">GitHub Repository</a>
-            </h5>
-            <div class="image-container">
-                <img class="right2 expandable-image" src="Screenshot 2025-05-08 134729.png" alt="Project Image">
-                <button class="expand-button">Expand Image</button>
+            <div class="project-content">
+                <div class="image-container">
+                    <img class="expandable-image" src="Screenshot 2025-05-08 134729.png" alt="Project Image">
+                    <button class="expand-button">Expand Image</button>
+                </div>
+                <div class="text-container">
+                    <h1 class="assignments indie-flower-bold">
+                        <a href="https://stagefright2025.netlify.app/" target="_blank">BPA Stage Fright</a>
+                    </h1>
+                    <h5 class="description abel-regular">
+                        This website I worked on with two other classmates and took it to BPA where it placed 4th. It is a website for a fake rock band called Stage Fright. This included a section to purchase tickets, a page to buy merch, a page to view albums and other songs, and a meet-the-band page.
+                        <a href="https://github.com/Sunny8186/BPARockBand" target="_blank">GitHub Repository</a>
+                    </h5>
+                </div>
             </div>
         </div>
 
         <div class="project-section">
-            <h1 class="assignments indie-flower-bold">
-                <a href="https://rusticroots2025.netlify.app/" target="_blank" id="shiftR">BPA Rustic Roots</a>
-            </h1>
-            <h5 class="descrption abel-regular" id="r">
-                I worked on this project with numerous other classmates and took it to BPA where it placed 2nd. We had to create and design merch for a fake farmers market called Rustic Roots. We created a logo, a t-shirt, a tote bag, some posters, and I decided to create something with both graphic design and computer programming by making an interactive map for customers to locate products around the market. I created the website on GitHub and designed the map and icons on Adobe.
-                <a href="https://github.com/Sunny8186/BPARusticRoots" target="_blank">GitHub Repository</a>
-            </h5>
-            <div class="image-container">
-                <img class="right2 expandable-image" src="Screenshot 2025-05-08 134822.png" alt="Project Image">
-                <button class="expand-button">Expand Image</button>
+            <div class="project-content">
+                <div class="image-container">
+                    <img class="expandable-image" src="Screenshot 2025-05-08 134822.png" alt="Project Image">
+                    <button class="expand-button">Expand Image</button>
+                </div>
+                <div class="text-container">
+                    <h1 class="assignments indie-flower-bold">
+                        <a href="https://rusticroots2025.netlify.app/" target="_blank">BPA Rustic Roots</a>
+                    </h1>
+                    <h5 class="description abel-regular">
+                        I worked on this project with numerous other classmates and took it to BPA where it placed 2nd. We had to create and design merch for a fake farmers market called Rustic Roots. We created a logo, a t-shirt, a tote bag, some posters, and I decided to create something with both graphic design and computer programming by making an interactive map for customers to locate products around the market. I created the website on GitHub and designed the map and icons on Adobe.
+                        <a href="https://github.com/Sunny8186/BPARusticRoots" target="_blank">GitHub Repository</a>
+                    </h5>
+                </div>
             </div>
         </div>
       </div>
